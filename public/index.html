@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Challenge</title>
+	</head>
+	<body class="h-auto sm:h-screen">
+		<div class="bg-400 min-w-full flex justify-center h-full">
+			<div class="h-full w-72 flex flex-col =">
+				<img
+					class="pt-10 w-16 self-center sm:mt-14"
+					src="../image/logo.svg"
+					alt="Splitter"
+				/>
+				<div class="flex self-center mt-8 flex-col sm:flex-row sm:w-60 sm:h-60">
+					<div class="bg-600 flex-1 w-full rounded-t-3xl sm:rounded-none sm:rounded-tl-3xl sm:rounded-bl-3xl p-5 shadow-lg">
+						<span class="text-200 font-monospace">Bill</span>
+						<div class="flex items-center space-x-1 relative">
+							<input
+								type="text"
+								class="relative text-right rounded-sm border-none outline-none w-full p-1 font-monospace font-bold text-100 pr-3"
+							/>
+							<label class="text-300 font-serif font-normal absolute left-2">$</label>
+						</div>
+                        <div class="mt-5">
+                            <span class="font-monospace text-200 text-xs">Select Tip %</span>
+                            <div class="flex flex-col space-y-6">
+                                <div class="grid grid-cols-2 gap-3 mt-2 flex-1">
+                                    <span class="font-monospace bg-100 py-2 text-center text-600 rounded cursor-pointer hover:bg-700 hover:text-100">5%</span>
+                                    <span class="font-monospace bg-100 py-2 text-center text-600 rounded cursor-pointer hover:bg-700 hover:text-100">10%</span>
+                                    <span class="font-monospace bg-100 py-2 text-center text-600 rounded cursor-pointer hover:bg-700 hover:text-100">15%</span>
+                                    <span class="font-monospace bg-100 py-2 text-center text-600 rounded cursor-pointer hover:bg-700 hover:text-100">25%</span>
+                                    <span class="font-monospace bg-100 py-2 text-center text-600 rounded cursor-pointer hover:bg-700 hover:text-100">50%</span>
+                                    <span class="font-monospace bg-600 py-2 text-center text-200 rounded cursor-pointer hover:bg-700 hover:text-100">Custom</span>
+                                </div>
+                                <div class="relative">
+                                    <span class="font-monospace text-200 text-xs">Number of People</span>
+                                    <input type="text" class="pr-3 mt-1 text-right rounded-sm border-none outline-none w-full p-1 font-monospace font-bold text-100">
+                                    <label class="absolute left-3 top-9">
+                                        <img src="../image/icon-person.svg" alt="users" class="h-3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+
+					<div class="flex bg-600 flex-1 p-5 flex-col sm:rounded-tr-3xl sm:rounded-br-3xl">
+                        <div class="flex-1 flex bg-100  rounded-lg p-5 flex-wrap justify-center flex-start">
+                            <div class="flex flex-col flex-1 sm:items-start sm:mt-9">
+                                <div class="flex-1">
+                                    <p class="text-sm font-monospace text-600">Tip Amount</p>
+                                    <p class="text-xs font-monospace text-300">/person</p>
+                                </div>
+                                <div class="flex-1 mt-5">
+                                    <p class="text-sm font-monospace text-600">Total</p>
+                                    <p class="text-xs font-monospace text-300">/person</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-between sm:self-start space-y-14 sm:mt-9">
+                                <span class="w-28 text-right font-monospace bg-100 text-700 text-2xl sm:text-4xl">$0.00</span>
+                                <span  class="w-28 text-right font-monospace  bg-100 text-700 text-2xl sm:text-4xl">$0.00</span>
+                            </div>
+                            <div class="mt-6 sm:self-end w-full">
+                                <button class="bg-700 w-full h-8 uppercase rounded font-semibold text-100 sm:w-full hover:opacity-90">reset</button>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

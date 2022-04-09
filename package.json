@@ -1,0 +1,19 @@
+{
+	"name": "tailwind102",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npx tailwindcss -i tailwind.css -o ./public/css/styles.css --watch",
+		"prod": "npx tailwindcss -i tailwind.css -o ./public/css/styles.css --minify"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.0.23"
+	},
+	"dependencies": {
+		"@tailwindcss/typography": "^0.5.2"
+	}
+}
